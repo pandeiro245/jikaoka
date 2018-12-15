@@ -1,7 +1,8 @@
 class Root
   attr_accessor :contents, :connections, :theme
   def initialize
-    @theme = '１人の人間の時間は有限である。'
+    # @theme = '１人の人間の時間は有限である。'
+    @theme = 'YOUR TIME IS LIMITED'
     @contents = [Jikan.new, Shinyo.new, Shikin.new]
     @connections = [
       "#{@contents[1].name}を増やしたり保ったりするためには#{@contents[0].name}のやりくりが必要",
