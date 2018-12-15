@@ -4,6 +4,6 @@ class Shinyo < Word
   end
 
   def toha
-    '他人から何かを任せてもらえるぐらい信じてもらえること'
+    '価値を感じてもらえること'
   end
 end

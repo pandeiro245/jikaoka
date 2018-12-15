@@ -4,7 +4,7 @@ class Jikan < Word
   end
 
   def toha
-    '人間が1日に24時間使えるもの'
+    '人間が生まれてから死ぬまでの期間の一部分'
   end
 
   def wikip
