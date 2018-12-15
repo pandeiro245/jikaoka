@@ -7,6 +7,10 @@ class Jikan < Word
     '人間が生まれてから死ぬまでの期間の一部分'
   end
 
+  def yugen
+    '１人の人間の時間は有限である。その絶対量は増やせないがワクワクする時間の比率を増やすことならできる。'
+  end
+
   def wikip
     case @lang
     when :ja

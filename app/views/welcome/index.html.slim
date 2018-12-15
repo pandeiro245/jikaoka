@@ -1,7 +1,7 @@
 h1=@root.title
 - @root.contents.each do |content|
-  h2="#{content.name}とは"
-  p=content.toha
+  h2=content.name
+  p=content.yugen
 - @root.connections.each_with_index do |connection, i|
   - i2 = i == 2 ? 0 : i + 1
   h2="#{@root.contents[i].name}と#{@root.contents[i2].name}"
