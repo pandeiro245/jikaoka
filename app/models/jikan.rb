@@ -1,4 +1,12 @@
 class Jikan < Word
+  def name
+    '時間'
+  end
+
+  def toha
+    '人間が1日に24時間使えるもの'
+  end
+
   def wikip
     case @lang
     when :ja
