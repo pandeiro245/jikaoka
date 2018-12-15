@@ -1,6 +1,4 @@
 class Jikan < Word
-  attr_accessor :lang
-
   def wikip
     case @lang
     when :ja

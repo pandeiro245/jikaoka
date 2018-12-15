@@ -1,0 +1,3 @@
+class Okane < Kahei
+end
+
