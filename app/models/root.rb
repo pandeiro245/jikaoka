@@ -1,6 +1,7 @@
 class Root
-  attr_accessor :contents, :connections
+  attr_accessor :contents, :connections, :theme
   def initialize
+    @theme = '１人の人間の時間は有限である。'
     @contents = [Jikan.new, Shinyo.new, Shikin.new]
     @connections = [
       "#{@contents[1].name}を増やしたり保ったりするためには#{@contents[0].name}のやりくりが必要",
@@ -10,6 +11,7 @@ class Root
   end
 
   def title
-    @contents.map{|c| c.name}.join('と')
+    # @contents.map{|c| c.name}.join('と')
+    @theme
   end
 end
