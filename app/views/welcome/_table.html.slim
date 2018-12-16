@@ -4,13 +4,25 @@ table class='welcome'
       td
         h2="#{i+1}. #{content.name}"
         p=content.yugen
-  tr
+        - content = @root.contents[i]
+        p=link_to(content.service, "/#{content.service.downcase}")
+
+  tr{style='background: #eee;'}
     - @root.connections.each_with_index do |connection, i|
       - i2 = i == 2 ? 0 : i + 1
       td
         h2="#{3+i+1}. #{@root.contents[i].name}と#{@root.contents[i2].name}"
         p=connection
   tr
-    - @root.contents.each_with_index do |content, i|
-      td=link_to(content.service, "/#{content.service.downcase}")
+    - @root.orgs.each_with_index do |org, i|
+      td
+        h2="#{6+i+1}. #{org}"
+        p あいうえおかきくけこさしすせそ
+
+  - @root.contents.each_with_index do |content, i|
+    tr{style='background: #eee;'}
+      - @root.orgs.each_with_index do |org, i2|
+       td
+        h2="#{6+6+i*3+i2+1}. #{org}と#{content.name}"
+        p あいうえおかきくけこさしすせそ
 
