@@ -1,0 +1,21 @@
+table class='welcome'
+  tr
+    td &nbsp;
+    - @root.contents.each_with_index do |content, i|
+      td="#{i+1}. #{content.name}"
+  tr
+    td 増やす
+    - @root.contents.each_with_index do |content, i|
+      td=content.yugen
+  tr
+    td 関係
+    - @root.connections.each_with_index do |connection, i|
+      - i2 = i == 2 ? 0 : i + 1
+      td
+        h3="#{i+1}. #{@root.contents[i].name}と#{@root.contents[i2].name}"
+        p=connection
+  tr
+    td サービス
+    - @root.contents.each_with_index do |content, i|
+      td=content.service
+

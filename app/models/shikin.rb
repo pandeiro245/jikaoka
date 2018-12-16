@@ -10,5 +10,9 @@ class Shikin < Word
   def toha
     '事業活動を行うための元手となる金のこと'
   end
+
+  def service
+    'MoneyForward'
+  end
 end
 

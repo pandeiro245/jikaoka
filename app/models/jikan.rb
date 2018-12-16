@@ -11,6 +11,10 @@ class Jikan < Word
     'その絶対量は増やせないがワクワクする時間の比率を増やすことならできる。'
   end
 
+  def service
+    'TimeCrowd'
+  end
+
   def wikip
     case @lang
     when :ja
