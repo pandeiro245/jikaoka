@@ -3,7 +3,11 @@ class Campfire
     '資金集めを民主化し、世界中の誰しもが声をあげられる世の中をつくる。'
   end
 
-  def mission_url
+  def url
     'https://campfire.co.jp/'
+  end
+
+  def vision
+    '優しい革命をおこす'
   end
 end
