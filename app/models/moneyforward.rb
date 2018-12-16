@@ -1,4 +1,8 @@
 class Moneyforward
+  def name
+    'MoneyForward'
+  end
+
   def mission
     'お金を前へ。人生をもっと前へ。'
   end

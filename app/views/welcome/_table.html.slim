@@ -17,5 +17,5 @@ table class='welcome'
   tr
     td サービス
     - @root.contents.each_with_index do |content, i|
-      td=content.service
+      td=link_to(content.service, "/#{content.service.downcase}")
 

@@ -1,4 +1,8 @@
 class Campfire
+  def name
+    'CAMPFIRE'
+  end
+
   def mission
     '資金集めを民主化し、世界中の誰しもが声をあげられる世の中をつくる。'
   end

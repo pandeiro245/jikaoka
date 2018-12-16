@@ -1,10 +1,14 @@
 class Timecrowd
+  def name
+    'TimeCrowd（タイムクラウド）'
+  end
+
   def mission
-    '時間を共有して嬉しい事を増やす'
+    '生きた時間を増やす'
   end
 
   def vision
-    '生きた時間を増やす'
+    '時間を共有することで嬉しい事を増やす'
   end
 
   def url

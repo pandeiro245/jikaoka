@@ -1,0 +1,7 @@
+h1=@word.name
+- %w(mission vision).each do |key|
+  h2=key.upcase
+  p = @word.send(key)
+
+hr
+= link_to 'TOP', :root

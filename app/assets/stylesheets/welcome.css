@@ -1,14 +1,30 @@
-table.welcome{
-  border-top: 1px solid #999;
-  border-left: 1px solid #999;
-}
-
-.welcome *{
+*{
+  border: none;
+  border-spacing: 0;
   padding: 0;
   margin: 0;
+}
+
+h1{
+  margin: 10px;
+}
+
+h2{
+  margin: 10px;
+}
+
+p{
+  margin: 10px;
+}
+
+table.welcome{
+  margin: 30px;
+  border-top: 1px solid #999;
+  border-left: 1px solid #999;
 }
 
 .welcome td{
   border-right: 1px solid #999;
   border-bottom: 1px solid #999;
+  padding: 10px;
 }
