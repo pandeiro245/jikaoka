@@ -1,10 +1,11 @@
-h2 時間を増やすための３つの方法
 - @root.contents.each_with_index do |content, i|
-  h3="#{i+1}. #{content.name}"
+  h2="#{i+1}. #{content.name}"
   p=content.yugen
-h2 それぞれの関係
 - @root.connections.each_with_index do |connection, i|
   - i2 = i == 2 ? 0 : i + 1
-  h3="#{i+1}. #{@root.contents[i].name}と#{@root.contents[i2].name}"
+  h2="#{3+i+1}. #{@root.contents[i].name}と#{@root.contents[i2].name}"
   p=connection
+h2 services
+- @root.contents.each_with_index do |content, i|
+  td=link_to(content.service, "/#{content.service.downcase}")
 
